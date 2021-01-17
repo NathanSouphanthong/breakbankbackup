@@ -1,0 +1,259 @@
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  margin: 0 0;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.to-do-list{ 
+  margin: 50px auto;
+  width:50%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #53BA83;
+}
+
+.flex-child {
+  flex: 1;
+  /* border: 2px solid yellow; */
+}  
+
+.flex-child:first-child {
+} 
+
+.timer{ 
+  padding-right: 50px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+
+  color: white;
+}
+
+.name{ 
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 87px;
+  padding-left: 50px;
+  margin: auto;
+  color: white;
+}
+
+.circle-small-task {
+  width: 46px;
+  height: 24px;
+  border-radius: 12px;
+  background-color:#9FD86B;
+  text-align: center;
+  color:white;
+  float: left;
+  margin-right:20px;
+}
+
+.circle-medium-task {
+  width: 46px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #53BA83;
+  text-align: center;
+  color:white;
+  float: left;
+  margin-right:20px;
+
+}
+
+.circle-large-task {
+  width: 46px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #059B9A;
+  text-align: center;
+  color:white;
+  float: left;
+  margin-right:20px;
+}
+
+.circle-custom-task {
+  width: 46px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #095169;
+  text-align: center;
+  color:white;
+  float: left;
+  margin-right:20px;
+}
+
+
+#timer{
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 87px;
+letter-spacing: 0.1em;
+
+color: white;
+
+}
+
+#pause{
+background: #C4C4C4;
+font-family: Open Sans;
+font-style: normal;
+color:white;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+
+color:white;
+}
+
+#run{
+  
+  background: #C4C4C4;
+  color: white;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: white;
+}
+
+div.name>img{ 
+  float:left;
+  width: 100px; 
+  height:auto;
+  padding-right:20px;
+}
+
+p.name{ 
+  padding-left: 100px;
+}
